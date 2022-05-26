@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
         menu.add(0,1,1,"Contact the bank");
 
         if(v == btnDBS){
-            bankClicked = "DBS";
+            bankClicked = getString(R.string.dbsBank);
         }
         else if(v == btnOCBC){
-            bankClicked = "OCBC";
+            bankClicked = getString(R.string.ocbcBank);
         }
         else if(v == btnUOB){
-            bankClicked = "UOB";
+            bankClicked = getString(R.string.uobBank);
         }
     }
 
@@ -106,19 +106,19 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.EnglishSelection) {
-            btnDBS.setText("DBS");
-            btnOCBC.setText("OCBC");
-            btnUOB.setText("UOB");
+            btnDBS.setText("getString(R.string.dbsBank)");
+            btnOCBC.setText("getString(R.string.ocbcBank");
+            btnUOB.setText("getString(R.string.uobBank");
             return true;
         } else if (id == R.id.chineseSelection) {
-            btnDBS.setText("星展银行");
-            btnOCBC.setText("华侨银行");
-            btnUOB.setText("大华银行");
+            btnDBS.setText(R.string.dbsChinese);
+            btnOCBC.setText(R.string.ocbcChinese);
+            btnUOB.setText(R.string.uobChinese);
             return true;
         } else {
-            btnUOB.setText("Error translation");
-            btnUOB.setText("Error translation");
-            btnUOB.setText("Error translation");
+            btnUOB.setText(R.string.error);
+            btnUOB.setText(R.string.error);
+            btnUOB.setText(R.string.error);
         }
 
         return super.onOptionsItemSelected(item);

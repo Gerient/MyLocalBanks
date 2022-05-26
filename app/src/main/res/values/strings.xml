@@ -5,4 +5,11 @@
     <string name="uob">UOB</string>
     <string name="english">English</string>
     <string name="chinese">Chinese</string>
+    <string name="dbsBank">DBS</string>
+    <string name="ocbcBank">OCBC</string>
+    <string name="uobBank">UOB</string>
+    <string name="dbsChinese">星展银行</string>
+    <string name="ocbcChinese">华侨银行</string>
+    <string name="uobChinese">大华银行</string>
+    <string name="error">Error translation</string>
 </resources>
